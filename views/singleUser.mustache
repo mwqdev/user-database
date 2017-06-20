@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./public/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="userWrapper">
+        <div class="top">
+            {{#singleUser}}
+            <img src={{avatar}} class="circle">
+
+            <span class="singleUserName">{{name}}</span> {{#address}}
+            <span class="contactInfo">{{city}}, {{country}} | {{job}}, {{company}}</span>
+
+            <span class="contactInfo">{{email}} | {{phone}}</span> {{/address}}
+        </div>
+        <div class="bottom">
+            <h2>Education</h2>
+            <h2>Skills</h2>
+            <span>{{university}}</span> {{#skills}}
+            <span>{{.}}</span> {{/skills}} {{/singleUser}}
+
+        </div>
+    </div>
+</body>
+
+</html>

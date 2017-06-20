@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./public/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        {{#userInfo}}
+        <div class="userCard">
+            <img src={{avatar}}>
+            <a href="/{{id}}"><span class="name">{{name}}</span></a> {{#job}}
+            <span class="job">{{job}}, {{company}}</span> {{/job}} {{^job}}
+            <span class="available">Available for hire</span> {{/job}} 
+        </div>
+        {{/userInfo}}
+    </div>
+</body>
+
+</html>

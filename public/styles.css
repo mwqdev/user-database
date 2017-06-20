@@ -1,0 +1,71 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+
+}
+
+.container {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-around;
+}
+
+.userCard {
+ width: calc(25% - 2rem);
+ border: 1px solid lightgrey;
+ margin: 1rem 0;
+ padding: .5rem;
+ display: flex;
+ flex-wrap: wrap;
+ align-content: center;
+}
+
+.userCard img {
+    max-width: 100%;
+    margin: auto;
+}
+
+.name {
+    width: 100%;
+    color: lightblue;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.job {
+    width: 100%;
+}
+
+.available {
+    width: 100%;
+    color: orange;
+}
+
+.userWrapper { 
+    display: flex;
+    width: 80vw;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.circle {
+    border-radius: 50%;
+    border: 1px solid lightgrey;
+}
+
+.singleUserName {
+    font-size: 4rem;
+}
+
+.top {
+    width: 100%;
+    display: flex;
+}
+
+.bottom {
+    width: 100%;
+    display: flex;
+}
